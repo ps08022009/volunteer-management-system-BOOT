@@ -1,13 +1,13 @@
 package com.pranav.vms.model;
 
-public class EMERGENCY_CONTACT {
+public class EmergencyContact {
 
     private String name;   
     private String phone;  
 
-    public EMERGENCY_CONTACT() {}
+    public EmergencyContact() {}
 
-    public EMERGENCY_CONTACT(String name, String phone) {
+    public EmergencyContact(String name, String phone) {
         this.name = name;
         this.phone = phone;
     }
