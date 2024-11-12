@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+    <link rel="stylesheet" href="user_form.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Management</h1>
+        
+        <!-- Tabs for Create, Find, Delete -->
+        <div class="tabs">
+            <button id="createTab" class="tab-button active">Create User</button>
+            <button id="findTab" class="tab-button">Find User</button>
+            <button id="deleteTab" class="tab-button">Delete User</button>
+        </div>
+
+        <!-- Create User Form -->
+        <div id="createForm" class="form-content active">
+            <h2>Create User</h2>
+            <form id="createUserForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="emergencyContact">Emergency Contact</label>
+                    <input type="text" id="emergencyContact" name="emergencyContact" placeholder="Name, Phone" required>
+                </div>
+                <button type="submit">Create User</button>
+            </form>
+            <div id="createMessage" class="message"></div>
+        </div>
+
+        <!-- Find User Form -->
+        <div id="findForm" class="form-content">
+            <h2>Find User by ID</h2>
+            <form id="findUserForm">
+                <div class="form-group">
+                    <label for="findId">User ID</label>
+                    <input type="text" id="findId" name="findId" required>
+                </div>
+                <button type="submit">Find User</button>
+            </form>
+            <div id="findMessage" class="message"></div>
+        </div>
+
+        <!-- Delete User Form -->
+        <div id="deleteForm" class="form-content">
+            <h2>Delete User</h2>
+            <form id="deleteUserForm">
+                <div class="form-group">
+                    <label for="deleteId">User ID</label>
+                    <input type="text" id="deleteId" name="deleteId" required>
+                </div>
+                <button type="submit">Delete User</button>
+            </form>
+            <div id="deleteMessage" class="message"></div>
+        </div>
+    </div>
+
+    <script src="user_form.js"></script>
+</body>
+</html>
